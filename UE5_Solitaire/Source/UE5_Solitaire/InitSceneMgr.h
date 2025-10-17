@@ -27,6 +27,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	void LoadUIAsset(FPrimaryAssetId AssetId);
 	void OnAssetLoadCompleted();
+	void RequestLoadAllRes();
+
 	// 头文件里存句柄
 	TSharedPtr<FStreamableHandle> LoadingHandle;
 };
