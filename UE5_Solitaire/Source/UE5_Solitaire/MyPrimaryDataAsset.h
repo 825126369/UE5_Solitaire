@@ -13,11 +13,13 @@ UCLASS(Blueprintable)
 class UE5_SOLITAIRE_API UMyPrimaryDataAsset : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
-	virtual FPrimaryAssetId GetPrimaryAssetId() const override
+public:
+
+	FPrimaryAssetId GetPrimaryAssetId() const override
 	{
 		return FPrimaryAssetId("UIAsset", GetFName());
 	}
-
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AssetBundles = "UI"))
 	TSoftClassPtr<UUserWidget> WidgetClass;
 
