@@ -1,0 +1,9 @@
+KY_target_done.png
+size:128,64
+filter:Linear,Linear
+a_0
+bounds:0,0,50,50
+offsets:25,25,100,100
+c
+bounds:52,22,28,28
+offsets:3,2,32,32

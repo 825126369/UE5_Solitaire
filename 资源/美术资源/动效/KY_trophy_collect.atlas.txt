@@ -1,0 +1,13 @@
+KY_trophy_collect.png
+size:1024,512
+filter:Linear,Linear
+a_1
+bounds:0,229,76,76
+offsets:12,12,100,100
+spine_japan_animation_scatter=41
+bounds:347,0,305,305
+offsets:14,14,333,333
+spine_ui_function_bigwin=super_light_06
+bounds:78,49,256,267
+offsets:2,2,260,270
+rotate:90

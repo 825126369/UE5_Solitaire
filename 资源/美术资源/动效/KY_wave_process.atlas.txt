@@ -1,0 +1,7 @@
+KY_wave_process.png
+size:256,256
+filter:Linear,Linear
+1
+bounds:0,0,225,25
+2
+bounds:0,27,225,126

@@ -1,0 +1,13 @@
+KY_number_flash.png
+size:256,128
+filter:Linear,Linear
+a_0
+bounds:0,26,50,50
+offsets:25,25,100,100
+a_1
+bounds:146,0,76,76
+offsets:12,12,100,100
+b
+bounds:52,2,74,92
+offsets:26,24,130,135
+rotate:90
