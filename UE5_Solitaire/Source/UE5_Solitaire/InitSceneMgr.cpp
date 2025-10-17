@@ -27,8 +27,7 @@ void AInitSceneMgr::Tick(float DeltaTime)
         float Percent = LoadingHandle->GetProgress();          // 0.0~1.0
         int32 Loaded, Requested;
         LoadingHandle->GetLoadedCount(Loaded, Requested);    // 已加载 / 总量
-        UE_LOG(LogTemp, Log, TEXT("UI 加载进度 %.0f%%  (%d/%d)"), Percent * 100.f, Loaded, Requested);
-        // 把 Percent 抛给 UI 进度条即可
+        UE_LOG(LogTemp, Log, TEXT("UI AInitSceneMgr Loading: %.0f %%(%d / %d)"), Percent * 100.f, Loaded, Requested);
     }
 }
 
