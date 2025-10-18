@@ -14,6 +14,9 @@ class UE5_SOLITAIRE_API UGameData : public USaveGame
 {
 	GENERATED_BODY()
 public:
+    UGameData();
+
+public:
     FString langName;
     int  nUIStyle = 0;
     int nCoinCount = 0;

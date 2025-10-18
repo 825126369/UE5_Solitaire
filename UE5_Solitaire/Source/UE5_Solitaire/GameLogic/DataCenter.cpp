@@ -1,6 +1,6 @@
 #include "DataCenter.h"
 
-void DataCenter::Init(InitFinishFunc func = NULL)
+void DataCenter::Init(InitFinishFunc func)
 {
 	this->mInitFinishFunc = func;
 	this->LoadData();
@@ -9,7 +9,7 @@ void DataCenter::Init(InitFinishFunc func = NULL)
 void DataCenter::LoadData()
 {
 	FAsyncLoadGameFromSlotDelegate LoadedDelegate;
-	LoadedDelegate.BindUObject(this, &DataCenter::OnLoadDataComplete);
+	LoadedDelegate.BindRaw(this, &DataCenter::OnLoadDataComplete);
 	UGameplayStatics::AsyncLoadGameFromSlot(DataCenter::DATA_SLOT_NAME, DataCenter::DATA_USER_INDEX, LoadedDelegate);
 }
 
@@ -33,7 +33,7 @@ void DataCenter::OnLoadDataComplete(const FString& SlotName, const int32 UserInd
 void DataCenter::SaveData()
 {
 	FAsyncSaveGameToSlotDelegate SavedDelegate;
-	SavedDelegate.BindUObject(this, &DataCenter::OnSaveDataComplete);
+	SavedDelegate.BindRaw(this, &DataCenter::OnSaveDataComplete);
 	UGameplayStatics::AsyncSaveGameToSlot(this->data, DataCenter::DATA_SLOT_NAME, DataCenter::DATA_USER_INDEX, SavedDelegate);
 }
 
