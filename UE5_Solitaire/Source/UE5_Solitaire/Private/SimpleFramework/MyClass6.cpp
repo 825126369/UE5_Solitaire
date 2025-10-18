@@ -5,6 +5,7 @@
 
 MyClass6::MyClass6()
 {
+
 }
 
 MyClass6::~MyClass6()
