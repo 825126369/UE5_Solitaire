@@ -3,3 +3,8 @@
 
 #include "GameData.h"
 
+UGameData::UGameData()
+{
+	SaveSlotName = TEXT("TestSaveSlot");
+	UserIndex = 0;
+}
