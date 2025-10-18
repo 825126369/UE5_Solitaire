@@ -10,11 +10,27 @@ public class UE5_Solitaire : ModuleRules
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+        PrivateDependencyModuleNames.AddRange(new string[] {
+            
+        });
+
+		PublicIncludePaths.AddRange(new string[] {
+			"UE5_Solitaire/Public/GameLogic/",
+            "UE5_Solitaire/Public/SimpleFramework/",
+        });
+
+		PrivateIncludePaths.AddRange(new string[] {
+            "UE5_Solitaire/Private/GameLogic/",
+            "UE5_Solitaire/Private/SimpleFramework/",
+        });
+
+		//InternalIncludePaths.AddRange(new string[] {
+		//           "GameLogic",
+		//      });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
+
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 

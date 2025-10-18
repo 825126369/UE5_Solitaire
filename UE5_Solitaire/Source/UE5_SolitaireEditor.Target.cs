@@ -11,5 +11,7 @@ public class UE5_SolitaireEditorTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 
 		ExtraModuleNames.AddRange( new string[] { "UE5_Solitaire" } );
+
+
 	}
 }

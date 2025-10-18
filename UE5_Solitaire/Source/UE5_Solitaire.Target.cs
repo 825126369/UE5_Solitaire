@@ -10,6 +10,8 @@ public class UE5_SolitaireTarget : TargetRules
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 
-		ExtraModuleNames.AddRange( new string[] { "UE5_Solitaire" } );
+		ExtraModuleNames.AddRange(new string[] { 
+			"UE5_Solitaire",
+        });
 	}
 }
