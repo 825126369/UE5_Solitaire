@@ -1,12 +1,13 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "GameLogic/Test.h"
+#include "MyClass6.h"
 
-Test::Test()
+MyClass6::MyClass6()
 {
+
 }
 
-Test::~Test()
+MyClass6::~MyClass6()
 {
 }

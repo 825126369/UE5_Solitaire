@@ -1,13 +1,12 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SimpleFramework/MyClass6.h"
+#include "Test.h"
 
-MyClass6::MyClass6()
+Test::Test()
 {
-
 }
 
-MyClass6::~MyClass6()
+Test::~Test()
 {
 }

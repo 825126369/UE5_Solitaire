@@ -14,15 +14,20 @@ public class UE5_Solitaire : ModuleRules
             
         });
 
-		PublicIncludePaths.AddRange(new string[] {
-			"UE5_Solitaire/Public/GameLogic/",
-            "UE5_Solitaire/Public/SimpleFramework/",
-        });
+		//PublicIncludePaths.AddRange(new string[] {
+		//	"UE5_Solitaire/Public/GameLogic/",
+  //          "UE5_Solitaire/Public/SimpleFramework/",
 
-		PrivateIncludePaths.AddRange(new string[] {
-            "UE5_Solitaire/Private/GameLogic/",
-            "UE5_Solitaire/Private/SimpleFramework/",
-        });
+  //          "UE5_Solitaire/GameLogic/",
+  //          "UE5_Solitaire/SimpleFramework/",
+  //      });
+
+		//PrivateIncludePaths.AddRange(new string[] {
+  //          "UE5_Solitaire/Private/GameLogic/",
+  //          "UE5_Solitaire/Private/SimpleFramework/",
+  //          "UE5_Solitaire/GameLogic/",
+  //          "UE5_Solitaire/SimpleFramework/",
+  //      });
 
 		//InternalIncludePaths.AddRange(new string[] {
 		//           "GameLogic",
